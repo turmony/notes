@@ -1,0 +1,26 @@
+numpy
+
+linspace(0,9,6)   从0到9划分五个部分形成6个数
+
+ones与ones_like的区别 https://blog.csdn.net/weixin_41377182/article/details/123724125
+
+random.rand(3,5) 与random.random((3，5))作用相同生成3行5列的数据，[0，1]
+
+random.uniform(x,y)   范围[x,y]
+
+np.dot与np.matmul在高维度下的区别  https://blog.csdn.net/ACTerminate/article/details/96151132
+
+np.expand_dims  https://blog.csdn.net/qq_37924224/article/details/119816771
+
+axis = 0 表示在第0维度添加[] , axis = 1 表示在第1维度添加[]
+
+广播规则 https://www.numpy.org.cn/user/basics/broadcasting.html
+
+从后往前比较，先看是否两个都有数，
+	---一个有数一个没数，后者向前者扩展
+	---两个都有数，
+		---是否含1，
+			---含1，1向另一个数扩展
+			---不含1，
+				---两数相同，直接计算
+				---两数不同，不兼容，异常
