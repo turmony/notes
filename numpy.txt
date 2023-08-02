@@ -24,3 +24,18 @@ axis = 0 表示在第0维度添加[] , axis = 1 表示在第1维度添加[]
 			---不含1，
 				---两数相同，直接计算
 				---两数不同，不兼容，异常
+
+a.itemsize 返回的是单个元素占的字节数
+
+numpy习题100道  https://blog.csdn.net/qq_39362996/article/details/90204737
+
+np.unravel_index(100, (6, 7, 8))，100是要求元素的索引
+
+>>> print(sum(range(5),-1))
+>>> from numpy import *
+>>> print(sum(range(5),-1))
+9
+10
+
+两次调用却出现不同结果，因为第一次调用的是python的原生sum，第二次调用的numpy的sum，原因分析
+https://stoneboy100200.github.io/2018/08/09/numpy-sum/
